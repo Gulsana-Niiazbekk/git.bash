@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #e5e5e5;
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  max-width: 1440px;
+  height: 90px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header__left-container {
+  width: 401px;
+  padding-left: 43px;
+}
+
+.header__company-name {
+  font-family: Lato;
+  font-size: 28px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header__menu {
+  padding: 20px;
+  font-size: 16px;
+  margin-left: 5px;
+  font-family: Lato;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  width: 512px;
+  list-style-type: none;
+  display: flex;
+}
+
+.header__info-link:hover {
+  color: rgb(54, 216, 216);
+}
+
+.header__home-link {
+  text-transform: uppercase;
+  font-family: Lato;
+  color: #7b1f1f;
+}
+
+.header__home-link:hover {
+  color: rgb(40, 221, 221);
+}
+
+.header__right-container {
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+}
+
+.header__sign-link {
+  padding-left: 40px;
+}
+
+.header-logo::before {
+  content: '';
+  background: url(./images/BAG.svg);
+  background-repeat: none;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.hero__box {
+  position: relative;
+  width: 1440px;
+  height: 823px;
+  background-image: url(./images/mall.png);
+}
+
+.hero__small-description {
+  max-width: 577px;
+  height: 328px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: -4px 4px 20px rgba(68, 33, 33, 0.25);
+  z-index: 2;
+ 
+}
+
+.small-description__main-part {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.small-description__secondary-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  padding-top: 30px;
+}
+
+.group-box {
+  margin: 0 auto;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  max-width: 1440px;
+  height: 90px;
+  display: grid;
+  grid-gap: 1em;
+}
+
+.item-categories {
+  height: 844px;
+  width: 975px;
+  margin: 0 auto;
+  margin-top: 90px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 33.8% 8.5% 9.2% 22%;
+  grid-template-rows: 35% 23.9% 20%;
+  grid-template-areas:
+    'group-box__bags-categorie  group-box__bags-categorie  group-box__shoes-categorie  group-box__shoes-categorie '
+    'group-box__sunglasses-categorie group-box__sunglasses-categorie group-box__sunglasses-categorie group-box__accessories-categorie'
+    'group-box__lingerine-categorie group-box__watch-categorie group-box__watch-categorie group-box__accessories-categorie';
+}
+.categorie-title {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.group-box__bags-categorie {
+  background-image: url(./images/BAGS.png);
+  width: 395px;
+  height: 306px;
+  grid-area: 'group-box__bags-categorie ';
+}
+
+.group-box__shoes-categorie {
+  background-image: url(./images/SHOES.png);
+  width: 580px;
+  height: 306px;
+  text-transform: uppercase;
+  color: #ffffff;
+  grid-area: 'group-box__shoes-categorie';
+}
+
+.group-box__sunglasses-categorie {
+  background-image: url(./images/SUNGLASSES.png);
+  width: 535px;
+  height: 210px;
+  text-transform: uppercase;
+  color: #ffffff;
+  grid-area: 'group-box__sunglasses-categorie';
+  grid-row: 2;
+}
+
+.group-box__lingerine-categorie {
+  background-image: url(./images/lingerine.png);
+  width: 264px;
+  height: 300px;
+  text-transform: uppercase;
+  color: #ffffff;
+  grid-area: 'group-box__lingerine-categorie';
+  grid-row: 3/3;
+}
+
+.group-box__watch-categorie {
+  background-image: url(./images/WATCH.png);
+  width: 243px;
+  height: 300px;
+  text-transform: uppercase;
+  color: #ffffff;
+  grid-area: 'group-box__watch-categorie';
+  grid-row: 3/3;
+}
+
+.group-box__accessories-categorie {
+  background-image: url(./images/accessories.png);
+  width: 400px;
+  height: 508px;
+  text-transform: uppercase;
+  color: #ffffff;
+  grid-area: 'group-box__accessories-categorie';
+  grid-row: 5/2;
+}
+
+.footer-info {
+  background-color: rgb(96, 73, 73);
+  position: absolute;
+  bottom: 0 auto;
+  width: 1440px;
+  height: 306px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.footer-contacts {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer__title {
+  font-family: Lato;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+}
+
+.footer__number {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
